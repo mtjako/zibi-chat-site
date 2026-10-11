@@ -4,11 +4,11 @@
   "platforms": {
     "darwin-aarch64-app": {
       "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.7/zibi-chat_0.9.7_darwin-aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMktucWF5REU5dEpxbFRIbFluQ2ZyNU9YeEdEdWtiWjN2YlY0aXRKR3d5RDBZdHdYSHhMcDd0VnA3UVdCQ0ZuMUNaMjAxZ3g1MHh4K3lYN3p4K1JUeUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzA0NTA3CWZpbGU6WmliaSBDaGF0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjkuNwpCVnQ2VUJ6aHp3bnluV2poaVRzSXpZSFg0WlV3a3Roa1pBTHFyMk9IMmJOM0tCQVllN29YbHFCUXBHK2g3WXlTYkphb3NBMnRwTTFZdXpuVE5yOUZBQT09Cg=="
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkFyUnhIK0FNb3NqZ0VCWWdEZDRtRUdnMS9DcVBSUmxjaXRMWDVpaWdQb25XOXNuVmFDU1VHb3lZdHJHa0ZpYkloM2RKSjRmMlIyczdlSDd2SGpLQXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzI2Mjc4CWZpbGU6WmliaSBDaGF0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjkuNwp2VG1UMEZMQkg0SnozU25BbUtlOG4wMmVQMEZCVGdWYnJMZjVRellCTTJaQU1mTDd6ak1zb05kVFJuR3VuQTlnL2MwRGdiaEJGdDdmamt0L0p0YXBBQT09Cg=="
     },
     "darwin-aarch64": {
       "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.7/zibi-chat_0.9.7_darwin-aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMktucWF5REU5dEpxbFRIbFluQ2ZyNU9YeEdEdWtiWjN2YlY0aXRKR3d5RDBZdHdYSHhMcDd0VnA3UVdCQ0ZuMUNaMjAxZ3g1MHh4K3lYN3p4K1JUeUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzA0NTA3CWZpbGU6WmliaSBDaGF0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjkuNwpCVnQ2VUJ6aHp3bnluV2poaVRzSXpZSFg0WlV3a3Roa1pBTHFyMk9IMmJOM0tCQVllN29YbHFCUXBHK2g3WXlTYkphb3NBMnRwTTFZdXpuVE5yOUZBQT09Cg=="
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkFyUnhIK0FNb3NqZ0VCWWdEZDRtRUdnMS9DcVBSUmxjaXRMWDVpaWdQb25XOXNuVmFDU1VHb3lZdHJHa0ZpYkloM2RKSjRmMlIyczdlSDd2SGpLQXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzI2Mjc4CWZpbGU6WmliaSBDaGF0LmFwcC50YXIuZ3oJdmVyc2lvbjowLjkuNwp2VG1UMEZMQkg0SnozU25BbUtlOG4wMmVQMEZCVGdWYnJMZjVRellCTTJaQU1mTDd6ak1zb05kVFJuR3VuQTlnL2MwRGdiaEJGdDdmamt0L0p0YXBBQT09Cg=="
     },
     "windows-x86_64-nsis": {
       "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.7/zibi-chat_0.9.7_windows-x86_64-setup.exe",
