@@ -1,0 +1,202 @@
+:root{--paper:#fff;--ink:#0a0a0a;--muted:#737373;--line:#e5e5e5;--accent:#007aff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0}a{color:inherit;text-decoration:none}button{font:inherit}button,a,summary{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:5px}img{object-fit:contain}p{color:var(--muted);line-height:1.7}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-weight:600}h2{font-size:clamp(34px,4vw,46px);line-height:1.13;letter-spacing:-1.8px}h3{font-size:21px;letter-spacing:-.6px}.wrap{width:min(1120px,calc(100% - 64px));margin-inline:auto}.header{position:sticky;top:0;z-index:10;padding-top:10px}.nav{height:60px;display:grid;grid-template-columns:minmax(max-content,1fr) auto minmax(max-content,1fr);column-gap:24px;align-items:center}.brand{display:flex;align-items:center;gap:9px;font-size:23px;font-weight:750;letter-spacing:-1px}.brand>span{font-weight:400;margin-left:-6px}.nav-links{display:flex;gap:32px;font-size:13px;font-weight:500}.nav-links a:hover{color:var(--accent)}.button{display:inline-flex;justify-content:center;align-items:center;gap:13px;padding:16px 23px;border-radius:10px;font-size:14px;font-weight:550;transition:transform .2s,background .2s;border:1px solid transparent}.button:hover{transform:translateY(-2px)}.dark{background:var(--ink);color:white;box-shadow:0 3px 4px #17171712}.dark:hover{background:#404040}.small{padding:11px 16px;font-size:12px}.light{background:#ffffffa8;border-color:#d4d4d4}.hero{text-align:center;padding-top:66px}.hero h1{font-size:clamp(46px,6.2vw,76px);line-height:1.06;letter-spacing:-4px;margin:26px 0 22px}.marked{position:relative;white-space:nowrap}.marked svg{position:absolute;bottom:-9px;left:0;width:100%;height:15px;fill:none;stroke:var(--accent);stroke-opacity:.4;stroke-width:7;stroke-linecap:round;z-index:-1}.hero-copy{font-size:17px;margin-bottom:27px}.hero-actions{display:flex;align-items:center;justify-content:center;gap:27px}.platform-note{font-size:10px;margin-top:15px;color:#737373}.platform-note span{margin-left:5px}.showcase{position:relative;max-width:950px;margin:49px auto 0;scroll-margin-top:110px}.integrations{padding:42px 0 53px;border-bottom:1px solid var(--line)}.integrations>p{font-size:11px;margin-bottom:24px}.agent-logos{display:flex;justify-content:center;align-items:center;gap:43px;flex-wrap:wrap}.agent-logos>span{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:550;letter-spacing:-.3px}.section{padding-block:95px}.section-heading{margin-bottom:34px;text-align:center}.section-heading h2{margin:0}.menubar-section{background:#e5e5e5;border-block:1px solid #e5e5e5;padding:76px 0}.faq-section{display:grid;grid-template-columns:minmax(0,760px);justify-content:center;gap:34px}
+.faq-section>div:first-child{text-align:center}.faq-list details{border-bottom:1px solid var(--line)}.faq-list summary{list-style:none;cursor:pointer;padding:21px 0;font-size:14px;font-weight:550;display:flex;justify-content:space-between;gap:20px}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary>span{display:flex;align-items:center;color:#737373;transition:transform .2s}.faq-list details[open] summary>span{transform:rotate(45deg)}.faq-list details:first-child summary{padding-top:0}.faq-list p{font-size:13px;margin-bottom:22px;max-width:570px}.download-section{padding-bottom:48px}.download-inner{position:relative;overflow:hidden;text-align:center;padding:50px 24px 36px;background:radial-gradient(ellipse at 50% 120%,#d4d4d4,transparent 75%),#e5e5e5;border:1px solid #d4d4d4;border-radius:19px}.download-icon{display:block;margin:0 auto 23px;box-shadow:0 8px 15px #26262618;border-radius:23%}.download-inner h2{margin:0 0 16px}.download-inner>p{font-size:14px}.download-buttons{display:flex;gap:10px;justify-content:center;margin-top:25px}.download-inner .download-note{font-size:10px;margin:17px 0 0;min-height:17px}.footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding:18px 0 22px;gap:15px}.footer .brand{font-size:16px}.footer p,.footer>span{font-size:11px;color:#737373;margin:0}.skip-link{position:fixed;top:-60px;left:15px;padding:12px;background:white;z-index:20;border:1px solid var(--line)}.skip-link:focus{top:10px}
+@media(min-width:1500px){.hero{padding-top:78px}}@media(max-width:1050px){.agent-logos{gap:26px}}@media(max-width:760px){.wrap{width:calc(100% - 36px)}.nav{height:56px}.nav-links{gap:17px;font-size:11px}.nav-links a:nth-child(2){display:none}.brand{font-size:21px}.hero{padding-top:46px}.hero h1{letter-spacing:-2.5px;font-size:57px}.hero-copy{font-size:15px}.showcase{margin-top:35px}.agent-logos{gap:22px 28px}.agent-logos>span{font-size:13px}.integrations{padding-block:35px}.section{padding-block:64px}.menubar-section{padding-block:55px}.faq-list summary{font-size:13px}.footer p{display:none}}
+@media(max-width:520px){.nav-links{display:none}.hero h1{font-size:46px;letter-spacing:-2.3px}.hero-copy{font-size:14px}.desktop-break{display:none}.hero-actions{gap:17px}.button{font-size:12px;padding:14px 18px}.small{padding:10px 14px}.agent-logos{display:grid;grid-template-columns:1fr 1fr;gap:23px 15px;text-align:left;max-width:320px;margin:auto}.agent-logos>span{font-size:12px;gap:8px}.agent-logos img{width:21px}.faq-section{gap:24px}.faq-section h2 br{display:none}.faq-list summary{font-size:14px}.download-section{padding-bottom:32px}.download-inner{padding:37px 17px 30px}.download-inner>p{font-size:13px}.download-buttons{flex-wrap:wrap;gap:9px}.download-buttons>a:first-child{width:100%}.download-buttons>a:not(:first-child){flex:1}.footer{padding-block:16px}.footer>span{font-size:10px}.platform-note{font-size:9px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Site preferences and actual application screenshots. */
+:root{color-scheme:light;--surface:#f7f7f7;--header:rgb(255 255 255/72%);--soft:#f7f7f7;--control:#fff;--button:#171717;--button-text:#fff}
+:root[data-theme=dark]{color-scheme:dark;--paper:#1e1e1e;--ink:#fafafa;--muted:#a1a1a1;--line:rgb(255 255 255/10%);--accent:#0a84ff;--surface:#252525;--header:rgb(37 37 37/72%);--soft:#252525;--control:#2d2d2d;--button:#e5e5e5;--button-text:#171717}
+body{background:var(--paper);color:var(--ink)}.nav-actions{display:flex;align-items:center;gap:9px}.dark{background:var(--button);color:var(--button-text)}.dark:hover{background:var(--accent);color:#fff}.light{background:var(--control);border-color:var(--line)}.marked svg{z-index:0;bottom:-12px}.platform-note,.platform-note span,.footer>span{color:var(--muted)}.menubar-section{background:var(--soft);border-color:var(--line)}.download-inner{background:radial-gradient(ellipse at 50% 120%,#d4d4d4,transparent 75%),#e5e5e5}.footer p{color:var(--muted)}.skip-link{background:var(--control)}.showcase{max-width:1000px;margin-bottom:0}.screenshot-frame{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);box-shadow:0 26px 65px -22px #17171735}.product-shot{display:block;width:100%;height:auto}
+:root[data-theme=dark] .download-inner{background:radial-gradient(ellipse at 50% 120%,#404040,transparent 75%),#262626;border-color:var(--line)}:root[data-theme=dark] .agent-logos img{filter:invert(1)}:root[data-theme=dark] .screenshot-frame{box-shadow:0 26px 65px -22px #0008}:root[data-theme=dark] .faq-list summary>span{color:var(--muted)}
+@media(max-width:900px){.nav-links{gap:18px}.nav-links a:nth-child(2){display:none}}
+@media(max-width:760px){.showcase{margin-top:35px}.nav-actions{gap:6px}.nav-links{display:none}}
+@media(max-width:520px){.nav-actions>.button{display:none}.hero h1{font-size:clamp(37px,10.5vw,46px)}.hero-actions{gap:14px}.hero-actions>.button{padding:14px}.screenshot-frame{border-radius:7px}}
+
+
+
+/* Platform marks inherit the download button color in both themes. */
+.download-link .platform-icon{display:block;flex:0 0 auto;width:22px;height:22px}
+.download-link.dark{--button-icon-cutout:var(--button)}
+.download-link.light{--button-icon-cutout:var(--control)}
+.download-link.dark:hover{--button-icon-cutout:var(--accent)}
+
+/* Download buttons: soft neutral surface with a raised edge. */
+.download-link,
+.download-cta{
+  --button-icon-cutout:#e5e5e5;
+  background:#e5e5e5;
+  color:#262626;
+  border:0;
+  border-radius:8px;
+  padding:12px 18px;
+  gap:10px;
+  font-size:14px;
+  font-weight:500;
+  line-height:20px;
+  box-shadow:0 0 0 1px #00000024,0 3px 8px #00000010,inset 0 -1px .4px #00000033,inset 0 1px .4px #fff;
+  transition:background .18s,box-shadow .18s,transform .18s;
+}
+.download-link .platform-icon{width:16px;height:16px}
+.download-link.dark,.download-link.light{--button-icon-cutout:#e5e5e5}
+.download-cta.small,.download-link.small{padding:8px 12px;font-size:12px;line-height:18px}
+.download-link:hover,
+.download-cta:hover{
+  --button-icon-cutout:#f5f5f5;
+  background:#f5f5f5;
+  color:#262626;
+  transform:translateY(-1px);
+  box-shadow:0 0 0 1px #00000030,0 4px 12px #00000014,inset 0 -1px .4px #00000033,inset 0 1px .4px #fff;
+}
+.download-link.dark:hover,.download-link.light:hover{--button-icon-cutout:#f5f5f5}
+:root[data-theme=dark] .download-link,
+:root[data-theme=dark] .download-cta{
+  box-shadow:0 0 0 2px #00000080,0 0 14px #ffffff30,inset 0 -1px .4px #00000033,inset 0 1px .4px #fff;
+}
+:root[data-theme=dark] .download-link:hover,
+:root[data-theme=dark] .download-cta:hover{
+  box-shadow:0 0 0 2px #00000080,0 0 20px #ffffff40,inset 0 -1px .4px #00000033,inset 0 1px .4px #fff;
+}
+.download-link:active,
+.download-cta:active{transform:translateY(1px);background:#d4d4d4;--button-icon-cutout:#d4d4d4}
+
+[data-platform-download] .platform-icon{display:block;flex:0 0 auto;width:16px;height:16px}
+
+/* Language and theme switches: segmented controls built on native radios. */
+:root{--segment-track:#f5f5f5;--segment-active:#fff}
+:root[data-theme=dark]{--segment-track:#252525;--segment-active:#404040}
+.segmented{display:inline-flex;gap:2px;padding:2px;border-radius:999px;background:var(--segment-track);box-shadow:inset 0 0 0 1px var(--line)}
+.segmented label{position:relative;display:block;cursor:pointer}
+.segmented input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.segmented span{display:grid;place-items:center;min-width:30px;height:30px;padding:0 9px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:.3px;color:var(--muted);transition:background .15s,color .15s,box-shadow .15s}
+.segmented svg{display:block;width:14px;height:14px}
+.segmented label:hover span{color:var(--ink)}
+.segmented input:checked+span{background:var(--segment-active);color:var(--ink);box-shadow:0 0 0 1px #00000014,0 1px 2px #0000001f}
+.segmented input:focus-visible+span{outline:3px solid var(--accent);outline-offset:1px}
+@media(max-width:520px){.segmented span{min-width:28px;height:26px;padding:0 7px}}
+
+/* Supported harness count is a key claim, so it reads as a heading above the logos. */
+.integrations>p{font-size:22px;font-weight:600;line-height:1.3;letter-spacing:-.5px;color:var(--ink);margin-bottom:28px}
+.integrations>p strong{color:var(--accent);font-weight:inherit}
+@media(max-width:520px){.integrations>p{font-size:19px}}
+
+/* Features bento grid. Visuals are decorative demo data and hidden from assistive tech in markup. */
+:root{--bento-terminal:#171717}
+:root[data-theme=dark]{--bento-terminal:#0a0a0a}
+.bento{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-areas:"limits limits sessions" "improve config sessions" "analytics analytics cli";gap:16px}
+.bento-limits{grid-area:limits}.bento-sessions{grid-area:sessions}.bento-improve{grid-area:improve}.bento-config{grid-area:config}.bento-analytics{grid-area:analytics}.bento-cli{grid-area:cli}
+.bento-card{display:flex;flex-direction:column;gap:24px;min-width:0;padding:26px;border:1px solid var(--line);border-radius:16px;background:var(--paper)}
+.bento-limits,.bento-analytics{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);align-items:center;gap:32px}
+.bento-icon{display:grid;place-items:center;width:36px;height:36px;margin-bottom:20px;border:1px solid var(--line);border-radius:10px;background:var(--control);font-size:17px;line-height:1}
+:root[data-theme=dark] .bento-icon{color:var(--accent)}
+.bento-card h3{font-size:20px;margin-bottom:10px}
+.bento-card p{font-size:13px;margin:0}
+.bento-card code{background:var(--control);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:12px}
+.bento-visual{margin:0;padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--control);font-size:11px;color:var(--muted)}
+.bento-cli .bento-visual{margin-top:auto}
+/* App UI replicas: tokens ported from zibi-chat src/style.css (light :root, dark .dark). */
+.app-ui{--app-fg:#0a0a0a;--app-muted:#737373;--app-border:#e5e5e5;border-color:var(--app-border);background:var(--app-bg);color:var(--app-fg);font-family:"Inter Variable",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+:root[data-theme=dark] .app-ui{--app-fg:#fafafa;--app-muted:#a1a1a1;--app-border:rgb(255 255 255/10%)}
+/* Threads rows replica (herdr-threads-list.tsx): rows only, no nav item or sidebar panel. Herdr dots Catppuccin Latte/Mocha. */
+.app-threads{--app-selected:#f5f5f5;--app-selected-fg:#171717;--dot-working:#df8e1d;--dot-blocked:#d20f39;--dot-done:#179299;--dot-idle:#40a02b;margin-top:auto;background:none}
+:root[data-theme=dark] .app-threads{--app-selected:#2d2d2d;--app-selected-fg:#fafafa;--dot-working:#f9e2af;--dot-blocked:#f38ba8;--dot-done:#94e2d5;--dot-idle:#a6e3a1}
+.app-threads svg{display:block;width:12px;height:12px}
+/* Rows gap-0.5; negative inline margin aligns row text with the card copy while selection keeps its px-2.5 inset. */
+.app-threads-list{display:flex;flex-direction:column;gap:2px;margin:0 -10px;padding:0;list-style:none}
+/* Row: flex-col gap-0.5 rounded-md px-2.5 py-1.5. */
+.app-thread{display:flex;flex-direction:column;gap:2px;min-width:0;padding:6px 10px;border-radius:8px}
+.app-thread.is-selected{background:var(--app-selected);color:var(--app-selected-fg)}
+.app-thread-line{display:flex;align-items:center;gap:6px;min-width:0;font-size:11px;color:var(--app-muted)}
+.app-thread-dot-col{display:flex;align-items:center;justify-content:center;flex:0 0 auto;width:12px}
+.app-thread-dot{width:8px;height:8px;border-radius:50%}
+.app-thread-dot[data-status=working]{background:var(--dot-working)}
+.app-thread-dot[data-status=blocked]{background:var(--dot-blocked)}
+.app-thread-dot[data-status=done]{background:var(--dot-done)}
+.app-thread-dot[data-status=idle]{border:1px solid var(--dot-idle)}
+.app-thread-project,.app-thread-branch{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.app-thread-project{font-weight:500}
+.app-thread-time{flex:0 0 auto;font-variant-numeric:tabular-nums}
+/* Title: truncate text-[12px] font-medium; muted while the agent is working (receded). */
+.app-thread-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight:500}
+.app-thread.is-receded .app-thread-title{color:var(--app-muted)}
+.app-thread-icon{display:inline-flex;flex:0 0 auto}
+.app-thread-agent{flex:0 0 auto}
+/* Plan limits replica: current-session.tsx PlanLimits, session-limit-chart.tsx, ui/progress.tsx (PacedProgress).
+   Only the SessionLimitChartGroup card (rounded-xl bg-card px-2.5); --app-bg stays the window colour for the pace ring.
+   Card #f7f7f7/#252525, accent #007aff as sampled from the real app screenshots. */
+.app-limits{--app-bg:#fff;--app-card:#f7f7f7;--app-track:rgb(229 229 229/70%);--app-divider:rgb(229 229 229/60%);--app-accent:#007aff;padding:0 10px;border-radius:14px;background:var(--app-card)}
+/* Dark deviates from the app tokens (#252525 card, 7% track) on purpose: on the #1e1e1e page tile they measured
+   1.09:1 card and 1.24:1 track contrast. #2d2d2d is the app's dark selected token; 15% track gives 1.62:1. */
+:root[data-theme=dark] .app-limits{--app-bg:#1e1e1e;--app-card:#2d2d2d;--app-track:rgb(255 255 255/15%);--app-divider:rgb(255 255 255/8%)}
+/* Rows: divide-y divide-border/60. */
+.app-limit{display:flex;flex-direction:column;gap:6px;padding:10px 0}
+.app-limit+.app-limit{border-top:1px solid var(--app-divider)}
+.app-limit-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;font-weight:500}
+/* PacedProgress: track h-1.5 rounded-full bg-border/70, indicator bg-primary, pace marker h-2.5 w-0.5 bg-foreground ring-1 ring-background. */
+.app-limit-progress{position:relative;display:flex;align-items:center;width:100%}
+.app-limit-track{display:flex;width:100%;height:6px;border-radius:999px;background:var(--app-track);overflow:hidden}
+.app-limit-track i{width:var(--value);height:100%;background:var(--app-accent)}
+.app-limit-pace{position:absolute;top:50%;left:var(--pace);width:2px;height:10px;border-radius:999px;background:var(--app-fg);box-shadow:0 0 0 1px var(--app-bg);transform:translate(-50%,-50%)}
+/* Footer: text-xs (12px/16px) muted; used label text-foreground, pace delta ml-1.5 muted. */
+.app-limit-meta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font-size:12px;line-height:16px;color:var(--app-muted);font-variant-numeric:tabular-nums}
+.app-limit-used{min-width:0;color:var(--app-fg)}
+.app-limit-delta{margin-left:6px;color:var(--app-muted)}
+.app-limit-reset{flex:0 0 auto}
+/* Usage chart replica: stats-usage-chart.tsx + ui/chart.tsx. Area type "step", --chart-2 (#737373 in both themes),
+   fillOpacity .3, strokeWidth 2; grid stroke-border/50; ticks text-xs fill-muted-foreground. */
+.app-chart{--app-chart:#737373;--app-grid:rgb(229 229 229/50%);background:none}
+:root[data-theme=dark] .app-chart{--app-grid:rgb(255 255 255/5%)}
+.app-chart-svg{display:block;width:100%;height:auto;overflow:visible;font-size:12px}
+.app-chart-grid line{fill:none;stroke:var(--app-grid)}
+.app-chart-area{fill:var(--app-chart);fill-opacity:.3}
+.app-chart-line{fill:none;stroke:var(--app-chart);stroke-width:2}
+.app-chart-ticks text{fill:var(--app-muted)}
+.bento-terminal{border-color:transparent;background:var(--bento-terminal);color:#e5e5e5;font:12px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+.bento-terminal span{color:#0a84ff}
+.bento-terminal code{padding:0;border:0;background:none;font:inherit;color:inherit}
+@media(max-width:900px){.bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"limits limits" "sessions improve" "sessions config" "analytics analytics" "cli cli"}}
+@media(max-width:640px){.bento{grid-template-columns:minmax(0,1fr);grid-template-areas:"limits" "sessions" "improve" "config" "analytics" "cli"}.bento-limits,.bento-analytics{display:flex;flex-direction:column;align-items:stretch;gap:24px}.bento-card{padding:22px}}
+
+/* Features follow the centred intro block; extra top space marks the switch from intro to content. */
+.features{padding-top:128px}
+@media(max-width:760px){.features{padding-top:88px}}
+
+/* Lucide icons (same set as the app, lucide 1.27.0), sized per context. */
+svg.lucide{display:block;flex:0 0 auto}
+.bento-icon svg{width:18px;height:18px}
+[data-platform-download-icon] svg{width:16px;height:16px}
+.faq-list summary>span svg{width:18px;height:18px}
+
+
+
+
+
+/* Environments section: centred heading over the full app window (tools/capture/take-surfaces.js),
+   framed like the hero screenshot. */
+.menubar-heading{max-width:560px;margin:0 auto 44px;text-align:center}
+.menubar-heading h2{margin:0 0 18px}
+.menubar-heading p{font-size:14px;margin:0}
+.environments-frame{max-width:1000px;margin-inline:auto}
+
+/* Floating glass navigation pill (Apple-style): detached from the viewport edges, translucent blurred
+   background in the theme colour (--header), full pill radius. */
+.nav{padding:0 10px;border:1px solid var(--line);border-radius:999px;background:var(--header);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);box-shadow:0 10px 30px -14px #00000033}
+:root[data-theme=dark] .nav{box-shadow:0 10px 30px -14px #000000b3,inset 0 1px 0 rgb(255 255 255/6%)}
+.nav .brand img{width:30px;height:30px}
+/* Bar CTA as a blue pill like Apple's "Buy". #0071e3 (Apple's link blue) keeps white text at 4.6:1. */
+.nav-actions .download-cta,
+:root[data-theme=dark] .nav-actions .download-cta{--button-icon-cutout:#0071e3;background:#0071e3;color:#fff;border-radius:999px;padding:8px 16px;box-shadow:none}
+.nav-actions .download-cta:hover,
+:root[data-theme=dark] .nav-actions .download-cta:hover{--button-icon-cutout:#0077ed;background:#0077ed;color:#fff;box-shadow:none;transform:none}
+.nav-actions .download-cta:active{--button-icon-cutout:#006edb;background:#006edb;transform:none}
+/* Equal side columns keep the links on the pill's centre (symmetric padding; the brand inset is a margin); explicit columns keep the actions on the
+   right when the links are hidden on narrow screens. */
+.nav .brand{grid-column:1;justify-self:start;margin-left:8px}
+.nav .nav-links{grid-column:2}
+.nav .nav-actions{grid-column:3;justify-self:end}
+.nav-actions .download-cta{white-space:nowrap}
+.footer .brand img{width:22px;height:22px}
+/* Screenshot sources come from preferences.js: with JS the image keeps its space (no layout shift) and stays
+   invisible until its srcset is set; without JS it is removed in favour of the <noscript> PNG. */
+html.js img[data-shot]:not([srcset]){visibility:hidden}
+html:not(.js) img[data-shot]{display:none}
