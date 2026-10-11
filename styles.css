@@ -217,3 +217,9 @@ html:not(.js) img[data-shot]{display:none}
 
 /* Znaki towarowe: jedno zdanie pod stopką, bez konkurowania z jej treścią. */
 .trademark-note{margin-top:0;padding-bottom:22px;font-size:10px;line-height:1.5;text-align:center;color:var(--muted)}
+
+/* Logotypy harnessów: te same ikony co w aplikacji (src/components/harness-logos.tsx,
+   Lobe Icons). Claude i Antigravity w barwach marek; OpenAI i Grok mają tylko wersje
+   czarne i białe, więc `currentColor` bierze kolor tekstu motywu — bez `invert`. */
+.agent-logos .agent-logo{width:25px;height:25px;flex:none}
+@media(max-width:520px){.agent-logos .agent-logo{width:21px;height:21px}}

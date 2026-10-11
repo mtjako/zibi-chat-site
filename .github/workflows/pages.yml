@@ -26,7 +26,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site
-          cp index.html styles.css script.js preferences.js translations.js CNAME .nojekyll _site/
+          cp index.html styles.css script.js preferences.js translations.js robots.txt CNAME .nojekyll _site/
           cp -R assets _site/assets
           if [ -d updates ]; then cp -R updates _site/updates; fi
       - uses: actions/upload-pages-artifact@v3

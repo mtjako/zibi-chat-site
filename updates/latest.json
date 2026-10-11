@@ -1,6 +1,5 @@
 {
   "version": "0.9.7",
-  "notes": "### Nowe\n\n- Zibi Chat sam sprawdza, czy jest nowa wersja, i pokazuje ją w „O aplikacji” razem z opisem zmian. Pobierasz i instalujesz ją jednym przyciskiem, a okna z niezapisaną pracą najpierw pytają o zgodę.\n- Przełącznik „Sprawdzaj aktualizacje automatycznie” w Ustawieniach → Ogólne. O każdej nowej wersji przychodzi jedno powiadomienie.\n\n### Zmienione\n\n- Tę wersję trzeba zainstalować ręcznie. Kolejne przyjdą już same.\n\n### Naprawione\n\n- Na nowszym macOS pobrana aplikacja nie jest już odrzucana jako „uszkodzona”. Przy pierwszym uruchomieniu wystarczy zezwolić na nią w Ustawieniach systemowych → Prywatność i ochrona.",
   "pub_date": "2026-10-11T08:07:04.911Z",
   "platforms": {
     "darwin-aarch64-app": {
