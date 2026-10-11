@@ -30,7 +30,8 @@ const EN = {
 
 'Jeszcze parę':'A few more', 'szczegółów.':'details.',
 'Czym właściwie jest Zibi Chat?':'What exactly is Zibi Chat?',
-'To desktopowe centrum zarządzania agentami kodującymi. Zibi zbiera informacje o użyciu, aktywnych sesjach i konfiguracji narzędzi, z których już korzystasz: Claude Code, Codex, Grok Build i Antigravity.':'It is a desktop hub for your coding agents. Zibi brings together usage, active sessions and settings for the tools you already use: Claude Code, Codex, Grok Build and Antigravity.',
+'To desktopowe centrum zarządzania agentami kodującymi. Zibi odczytuje z Twojego komputera informacje o użyciu, aktywnych sesjach i konfiguracji narzędzi, z których już korzystasz: Claude Code, Codex, Grok Build i Antigravity. Nie wysyła ich do nas — aplikacja nie ma telemetrii.':'It is a desktop hub for your coding agents. Zibi reads usage, active sessions and settings of the tools you already use from your computer: Claude Code, Codex, Grok Build and Antigravity. It does not send them to us — the app has no telemetry.',
+'Claude Code jest znakiem towarowym Anthropic, Codex — OpenAI, Grok Build — xAI, a Antigravity — Google. Zibi Chat jest niezależnym projektem i nie jest powiązany z tymi firmami.':'Claude Code is a trademark of Anthropic, Codex of OpenAI, Grok Build of xAI and Antigravity of Google. Zibi Chat is an independent project and is not affiliated with these companies.',
 'Czy Zibi zastępuje moich agentów?':'Does Zibi replace my agents?',
 'Nadal pracujesz ze swoimi agentami i ich kontami. Zibi pomaga kontrolować ich pracę i ustawienia. Dostęp do modeli oraz limity wynikają z Twoich planów u poszczególnych dostawców.':'You keep working with your agents and existing accounts. Zibi helps manage their activity and settings. Model access and usage limits depend on your plans with each provider.',
 'Na jakich systemach działa aplikacja?':'Which operating systems are supported?',
