@@ -2,6 +2,8 @@
 // `npm run publish-update` together with the update manifest. Empty values
 // leave downloads unavailable (no release yet, or a file:// preview).
 const DOWNLOAD_URLS = { macos: '', windows: '', linux: '' };
+// Every Linux package by key (`linux-x86_64-deb`, …) for the Linux menu.
+const LINUX_FILES = {};
 const DOWNLOADS_FILE = 'updates/downloads.json';
 const RELEASES_PREFIX = 'https://github.com/mtjako/zibi-chat-releases/releases/download/';
 const preferences = window.sitePreferences;
@@ -102,20 +104,54 @@ themeSwitch.addEventListener('change', event => {
 systemTheme.addEventListener('change', () => { if (preferences.theme === 'system') applyTheme(); });
 // Called again once downloads.json arrives, so links never wait for it to render.
 function applyDownloadUrls() {
-  document.querySelectorAll('.download-link').forEach(link => {
+  document.querySelectorAll('.download-link:not([data-linux-toggle])').forEach(link => {
     const url = DOWNLOAD_URLS[link.dataset.platform];
     if (url) { link.href = url; link.removeAttribute('aria-disabled'); }
   });
   if (desktopPlatform && DOWNLOAD_URLS[desktopPlatform]) {
     platformDownloads.forEach(button => { button.href = DOWNLOAD_URLS[desktopPlatform]; });
   }
+  linuxItems.forEach(item => {
+    const url = LINUX_FILES[item.dataset.linuxFile];
+    if (url) { item.href = url; item.removeAttribute('aria-disabled'); item.removeAttribute('tabindex'); }
+    else { item.removeAttribute('href'); item.setAttribute('aria-disabled', 'true'); item.tabIndex = -1; }
+  });
   updateDownloadStatus();
 }
-document.querySelectorAll('.download-link').forEach(link => {
+document.querySelectorAll('.download-link:not([data-linux-toggle])').forEach(link => {
   link.addEventListener('click', event => {
     if (DOWNLOAD_URLS[link.dataset.platform]) return;
     event.preventDefault(); downloadClicked = true; updateDownloadStatus();
   });
+});
+// Linux menu: the button opens a list of every package (format × architecture).
+const linuxToggle = document.querySelector('[data-linux-toggle]');
+const linuxMenu = document.querySelector('#linux-menu');
+const linuxItems = [...document.querySelectorAll('[data-linux-file]')];
+const enabledLinuxItems = () => linuxItems.filter(item => item.getAttribute('aria-disabled') !== 'true');
+function setLinuxMenu(open, { focus = false } = {}) {
+  linuxMenu.hidden = !open;
+  linuxToggle.setAttribute('aria-expanded', String(open));
+  if (open && focus) enabledLinuxItems()[0]?.focus();
+}
+linuxToggle.addEventListener('click', () => {
+  // No Linux packages published yet: same message as the other buttons.
+  if (!Object.keys(LINUX_FILES).length) { downloadClicked = true; updateDownloadStatus(); return; }
+  setLinuxMenu(linuxMenu.hidden, { focus: true });
+});
+linuxMenu.addEventListener('keydown', event => {
+  const items = enabledLinuxItems();
+  const index = items.indexOf(document.activeElement);
+  if (event.key === 'Escape') { setLinuxMenu(false); linuxToggle.focus(); }
+  else if (event.key === 'ArrowDown') { event.preventDefault(); items[(index + 1) % items.length]?.focus(); }
+  else if (event.key === 'ArrowUp') { event.preventDefault(); items[(index - 1 + items.length) % items.length]?.focus(); }
+});
+linuxItems.forEach(item => item.addEventListener('click', () => setLinuxMenu(false)));
+document.addEventListener('click', event => {
+  if (!linuxMenu.hidden && !event.target.closest('[data-linux-download]')) setLinuxMenu(false);
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !linuxMenu.hidden) { setLinuxMenu(false); linuxToggle.focus(); }
 });
 // Only installers from the releases repository: a bad or edited file must not
 // turn the download buttons into links to anywhere else.
@@ -136,6 +172,10 @@ async function loadDownloads() {
     DOWNLOAD_URLS.macos = releaseUrl(files['macos-aarch64']);
     DOWNLOAD_URLS.windows = releaseUrl(files['windows-x86_64']);
     DOWNLOAD_URLS.linux = releaseUrl(files[`linux-${await linuxArchitecture()}-appimage`]) || releaseUrl(files['linux-x86_64-appimage']);
+    linuxItems.forEach(item => {
+      const url = releaseUrl(files[item.dataset.linuxFile]);
+      if (url) LINUX_FILES[item.dataset.linuxFile] = url;
+    });
     applyDownloadUrls();
   } catch { /* No release published yet, offline or a file:// preview: keep "coming soon". */ }
 }

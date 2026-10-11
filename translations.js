@@ -40,6 +40,7 @@ const EN = {
 'Daj swoim agentom':'Give your agents', 'wspólny dom.':'a shared home.',
 'Twój następny pomysł zasługuje na pełne skupienie.':'Your next idea deserves your full attention.',
 'Pobierz na Windows':'Download for Windows', 'Pobierz na Linux':'Download for Linux',
+'Każda dystrybucja':'Any distribution', 'Wybierz paczkę dla Linuksa':'Choose a Linux package',
 'Pobierz na macOS':'Download for macOS', 'Instalatory pojawią się wkrótce.':'Installers are coming soon.',
 'Mała aplikacja dla wielkich pomysłów.':'A small app for big ideas.',
 'Nawigacja główna':'Main navigation', 'Zibi Chat — początek strony':'Zibi Chat — home',
