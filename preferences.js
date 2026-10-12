@@ -14,9 +14,10 @@
 
   // Screenshots depend on language and theme, so their markup carries no URL (a static one would be
   // fetched first and then replaced). Widths match tools/capture/make-webp.sh; sizes match the 1000 px
-  // screenshot frame inside .wrap (100% - 64px, or 100% - 36px up to 760px).
+  // screenshot frame in the content column of styles.css: 100vw minus two --gutter, where
+  // --gutter = clamp(18px, 10.41px + 2.1084vw, 32px). Update both together.
   const SHOT_WIDTHS = [800, 2200];
-  const SHOT_SIZES = '(max-width: 760px) calc(100vw - 36px), (max-width: 1064px) calc(100vw - 64px), 1000px';
+  const SHOT_SIZES = '(max-width: 360px) calc(100vw - 36px), (max-width: 1024px) calc(95.7832vw - 20.82px), (max-width: 1064px) calc(100vw - 64px), 1000px';
   const shotSrcset = shot => {
     const prefix = `assets/${shot}-${window.sitePreferences.language}-${document.documentElement.dataset.theme}`;
     return SHOT_WIDTHS.map(width => `${prefix}-${width}.webp ${width}w`).join(', ');
