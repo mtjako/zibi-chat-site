@@ -1,87 +1,115 @@
-# Zibi Chat — zibi.chat
+# Zibi Chat — strona w Next.js + Tailwind CSS
 
-Statyczna strona single page w języku polskim i angielskim. HTML, CSS i JavaScript, bez zależności i kroku build.
+Strona działa w Next.js App Router, React, TypeScript i Tailwind CSS 4. Zachowuje treść, układ, ikony, obrazy, PL/EN, motyw systemowy/jasny/ciemny, FAQ i pobieranie instalatorów. Projekt działa jako statyczny eksport na GitHub Pages i zastępuje poprzednią wersję w repozytorium `mtjako/zibi-chat-site`.
 
-## Podgląd
+## Uruchomienie
+
+Wymagany Node.js 24 i npm.
 
 ```sh
-python3 -m http.server 8080
+npm ci
+npm run dev
 ```
 
-Otwórz http://localhost:8080. Bezpośrednie otwarcie `index.html` również działa.
+Otwórz http://localhost:3000.
 
-## Języki i motywy
+```sh
+npm run typecheck
+npm run build
+npm run preview
+```
 
-- Selektor PL/EN zmienia wszystkie teksty, metadane, opisy dostępności i zrzuty aplikacji.
-- Pierwsza wizyta: język przeglądarki (polski dla `pl`, angielski dla pozostałych). Potem zapamiętany wybór.
-- `?lang=pl` oraz `?lang=en` pozwalają udostępnić konkretną wersję i mają pierwszeństwo przed zapisanym wyborem.
-- Motywy: System (domyślny), Jasny, Ciemny. System reaguje na zmianę `prefers-color-scheme` również podczas otwartej sesji.
-- Wybory są zapamiętywane lokalnie. Blokada localStorage nie blokuje działania strony.
-- `preferences.js` ustawia motyw przed ładowaniem CSS, ograniczając migotanie.
-- Treść źródłowa PL jest w `index.html`, tłumaczenia EN w `translations.js`. Przy zmianie polskiego tekstu zaktualizuj odpowiadający mu klucz w słowniku.
+Build tworzy folder `out/`. `preview` serwuje gotowy eksport na http://localhost:3000, również bez serwera Next.js.
 
-## Zrzuty interfejsu
+## Struktura
 
-`assets/session-{pl,en}-{light,dark}.png` to render rzeczywistych komponentów aplikacji z repozytorium `zibi-chat`, a nie narysowana makieta. `detail-*` to kadry tego samego ekranu. Dane są demonstracyjne (bez informacji z kont użytkownika); podpis na stronie to wskazuje. Pełny podgląd otwiera dostępne z klawiatury okno dialogowe, zamykane także klawiszem Escape.
+- `app/(entry)/` — strona startowa z wyborem języka na podstawie preferencji.
+- `app/[lang]/` — gotowe statyczne wersje `/pl/` i `/en/`, w tym przetłumaczone metadane i atrybut `lang`.
+- `components/site-page.tsx` — składanie strony z sekcji.
+- `components/site-document.tsx` — wspólny dokument HTML, metadane i inicjalizacja motywu.
+- `components/sections/` — nawigacja, hero, funkcje, środowiska, FAQ, pobieranie i stopka jako JSX.
+- `components/site-provider.tsx` — stan małych kontrolek: motywu, systemu użytkownika i instalatorów. Pełny słownik tłumaczeń nie trafia do pakietu przeglądarki.
+- `components/site-controls.tsx` — kontrolki Reacta i menu Linuksa z obsługą klawiatury.
+- `components/product-shot.tsx` — obraz jako komponent serwerowy, z natywnym fallbackiem bez JavaScriptu.
+- `public/preferences.js` — mały skrypt wbudowywany do HTML; wybiera i preloaduje właściwy zrzut przed ładowaniem Reacta.
+- `lib/translations.ts` — oryginalny słownik EN; polska treść znajduje się w komponentach.
+- `app/globals.css` — Tailwind, tokeny obu motywów oraz szczegółowe style oryginalnej strony i makiet aplikacji. Wspólne układy korzystają z klas Tailwinda bezpośrednio w JSX.
+- `public/assets/` — oryginalne grafiki i licencje.
+- `public/updates/` — kopia manifestów wydania z momentu migracji.
 
-Źródła widoku: `src/routes/root-layout.tsx`, `src/components/app-sidebar.tsx`, `src/components/app-toolbar.tsx`, `src/harness/claude/components/current-session.tsx`, `src/style.css` oraz oryginalne słowniki i18n aplikacji. Zrzuty wykonano w Chromium w rozdzielczości 1100×760. Natywne kontrolki macOS odtworzono przy lewym brzegu paska tytułu; efekty systemowego vibrancy nie są częścią renderu przeglądarkowego. Sesja pokazuje 32% limitu 5H, 18% limitu 7D, 124 780 tokenów, 42 wywołania i koszt $2.34.
+Wybory użytkownika są zapisywane w localStorage; zablokowany storage nie blokuje działania strony. `?lang=pl` / `?lang=en` mają pierwszeństwo przed zapisanym językiem. Motyw systemowy reaguje na zmianę systemu. Skrypt w head ustawia motyw przed pierwszym rysowaniem. Obie wersje językowe są generowane podczas buildu i zawierają pełną treść, metadane oraz zrzuty także bez JavaScriptu. Przełącznik języka przechodzi do odpowiedniego statycznego URL i zachowuje hash sekcji. Stare linki `?lang=pl` i `?lang=en` nadal działają. Jawny URL `/pl/` lub `/en/` ma pierwszeństwo przed zapisanym wyborem; na wejściu przez `/` używane są preferencje użytkownika.
 
-## Linki instalatorów
+## Wydajność i audyt
 
-Adresy instalatorów nie są wpisywane ręcznie. `npm run publish-update` w repozytorium `zibi-chat` zapisuje przy każdym wydaniu `updates/downloads.json` (w tym samym commicie co manifest aktualizacji `updates/latest.json`), a `script.js` wczytuje go i ustawia `DOWNLOAD_URLS`. Przyjmowane są tylko adresy z `mtjako/zibi-chat-releases`. Bez pliku (przed pierwszym wydaniem, podgląd z dysku) przyciski pozostają niedostępne, a kliknięcie wyświetla komunikat w wybranym języku bez przeładowania strony.
+Sekcje strony są Server Components. Pełny słownik i treść PL/EN są przetwarzane podczas buildu. JavaScript Reacta obsługuje kontrolki, instalatory i daty. Bootstrap w head wybiera i preloaduje właściwy zrzut przed hydracją.
 
-Linux dostaje AppImage dla architektury zgłoszonej przez przeglądarkę (User-Agent Client Hints, tylko Chromium); bez tej informacji x86_64. Katalogu `updates/` nie edytuj ręcznie — należy do procesu wydania.
+Grafiki mają rozmiary 480, 720, 800, 1100, 1600 i 2200 px; logotypy korzystają z małych wariantów. Po zmianie źródłowych PNG uruchom `npm run images` (wymaga `cwebp`, na macOS: `brew install webp`). Wygenerowane pliki są zapisane w repozytorium, więc CI nie wymaga tego narzędzia.
+
+`experimental.inlineCss` osadza CSS w HTML i usuwa blokujące żądanie arkusza. Przy aktualizacji Next.js należy sprawdzić dalszą obsługę tej eksperymentalnej opcji. Podgląd (`npm run preview`) używa Brotli/gzip i cache; po wdrożeniu za te ustawienia odpowiada GitHub Pages.
+
+```sh
+npm run build
+npm run lighthouse
+```
+
+Audyt wymaga lokalnego Chrome i dostępu do npm przy pierwszym pobraniu Lighthouse 13.5.0. Sam uruchamia serwer na porcie 4173, wykonuje kolejno trzy pomiary mobile i trzy desktopowe, po czym zamyka serwer. Raporty i mediany zapisuje w ignorowanym przez Git katalogu `.reports/lighthouse/`; następny audyt nadpisuje `summary.json`.
+
+Opcje: `LH_RUNS=1` dla pojedynczego pomiaru, `LH_PATH=/en/` dla EN, `PORT=4180` dla innego portu. Przy eksporcie do podkatalogu ustaw ten sam `NEXT_PUBLIC_BASE_PATH` podczas buildu, podglądu i audytu. Lokalne wyniki należy potwierdzić na docelowym hostingu. Celowa blokada indeksowania obniża SEO, a nie wydajność. Wyniki i historia pomiarów: [PERFORMANCE.md](PERFORMANCE.md).
+
+## Animacje i zgodność z aplikacją
+
+- Podkreślenie w hero rysuje się raz po otwarciu strony. Karty mają subtelne wejście i uniesienie pod kursorem. Są to efekty prezentacyjne strony.
+- Wiersze sesji zachowują wygląd aplikacji: nieruchome kropki, czas ostatniej aktywności i przygaszony tytuł pracującego agenta. Nie dodajemy pulsowania ani etykiety „Gotowe” w miejscu czasu.
+- Wypełnienie limitu i znacznik tempa startują razem przez 500 ms, tak jak `PacedProgress` w aplikacji. Wykres odsłania się przy wejściu sekcji.
+- Terminal wpisuje prawdziwą komendę `zibi stats` i pokazuje przykładowe wartości pól rzeczywistego JSON `summary`. Start następuje przy wejściu terminala w widok.
+- Zmiana motywu strony przenika prawdziwe zrzuty aplikacji w 240 ms po dekodowaniu obrazu. Szybkie kolejne zmiany anulują poprzednie przejście; pierwsze wejście nadal pobiera tylko właściwy wariant hero.
+
+Źródła zgodności w repozytorium aplikacji: `src/components/herdr-threads-list.tsx`, `src/components/herdr-space-dots.tsx`, `src/components/ui/progress.tsx` oraz `src-tauri/src/cli/stats.rs`. Dalsze animacje wewnątrz replik UI powinny wynikać z rzeczywistego zachowania tych komponentów.
+
+Efekty korzystają z CSS i jednego IntersectionObservera, bez biblioteki animacji ani timerów pisania. `prefers-reduced-motion: reduce` wyłącza ruch; bez JavaScriptu pełna treść i terminal pozostają widoczne.
+
+## Testy przeglądarkowe
+
+Uruchom eksport na porcie 3001 (`PORT=3001 npm run preview`), a w drugim terminalu:
+
+```sh
+playwright-cli -s=zibi-performance open http://127.0.0.1:3001/pl/
+playwright-cli -s=zibi-performance run-code --filename=tests/browser.js
+playwright-cli -s=zibi-performance run-code --filename=tests/motion.js
+playwright-cli -s=zibi-performance run-code --filename=tests/details.js
+playwright-cli -s=zibi-performance close
+```
 
 ## GitHub Pages
 
-1. **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-2. Wypchnij zmiany na `develop` albo ręcznie uruchom **Deploy GitHub Pages**.
-3. Ustaw domenę `zibi.chat` i DNS dla GitHub Pages. Istniejący `CNAME` jest zachowany.
+1. W ustawieniach istniejącego repozytorium `mtjako/zibi-chat-site` wybierz Settings → Pages → Source → GitHub Actions.
+2. Push na `main` lub `develop` uruchamia `.github/workflows/pages.yml`.
 
-Workflow publikuje pliki strony, wszystkie warianty screenshotów oraz katalog `updates/`, jeżeli istnieje. Nie wymaga zależności, buildu ani dodatkowych sekretów. Język i motyw nie wymagają reguł routingu po stronie serwera.
-
-### Odtworzenie screenshotów
-
-Źródła izolowanego renderera są w `tools/capture/`. Nie są publikowane na GitHub Pages i nie zmieniają aplikacji. Wymagają lokalnego repozytorium aplikacji z zainstalowanymi zależnościami oraz Playwright CLI.
-
-Z katalogu strony uruchom (podmień ścieżkę aplikacji):
+Workflow buduje `out/` i publikuje go na Pages. `NEXT_PUBLIC_BASE_PATH` przyjmuje prefiks z konfiguracji GitHub Pages, więc obsługuje też adres `uzytkownik.github.io/repozytorium/`. Dla lokalnego sprawdzenia takiego wariantu:
 
 ```sh
-ZIBI_APP_DIR=/sciezka/do/zibi-chat node /sciezka/do/zibi-chat/node_modules/vite/bin/vite.js --config tools/capture/vite.config.mjs --configLoader native
+NEXT_PUBLIC_BASE_PATH=/repozytorium npm run build
 ```
 
-Następnie, również z katalogu strony:
+Serwuj wtedy `out/` pod `/repozytorium/`. Dla własnej domeny pozostaw pusty prefiks. `public/CNAME` zachowuje `zibi.chat`; zmień go, jeśli strona ma używać innej domeny. Metadane OG zachowują oryginalny adres produkcyjny. Zachowana jest blokada indeksowania przed premierą (`noindex` i `robots.txt`).
 
-```sh
-playwright-cli -s=zibi-capture open http://127.0.0.1:8089
-playwright-cli -s=zibi-capture run-code --filename=tools/capture/take-shots.js
-playwright-cli -s=zibi-capture close
-```
+## Informacje przy pobieraniu
 
-Okno z widokiem „Środowiska” (`assets/environments-*.png`) renderuje osobny serwer, który zamiast podmieniać moduły aplikacji symuluje całą warstwę Tauri (`@tauri-apps/api/mocks`, dane w `tools/capture/surface-fixture.ts`). Ten sam serwer umie też pokazać panel z paska menu i Dynamic Notch (`?surface=tray|notch`), ale strona ich nie używa, bo nie działają na wszystkich systemach:
+Hero pokazuje wiersz „Bezpłatnie · Bez konta · Bez telemetrii” w PL/EN. Wersja i data publikacji pochodzą z tego samego żądania manifestu co instalatory. Datę formatujemy dla języka strony w UTC. Brak lub błędne metadane nie blokują poprawnych instalatorów.
 
-```sh
-ZIBI_APP_DIR=/sciezka/do/zibi-chat node /sciezka/do/zibi-chat/node_modules/vite/bin/vite.js --config tools/capture/vite.surfaces.config.mjs --configLoader native
-playwright-cli -s=zibi-capture open "http://127.0.0.1:8088/surfaces.html?surface=window"
-playwright-cli -s=zibi-capture run-code --filename=tools/capture/take-surfaces.js
-playwright-cli -s=zibi-capture close
-```
 
-Oba skrypty zapisują zrzuty w skali 2× (ekrany Retina).
+`npm run test:downloads` sprawdza parser manifestu (Node.js 24). Testy przeglądarkowe nowych elementów: `tests/downloads.js`, uruchamiane tak samo jak pozostałe testy.
 
-Strona serwuje zrzuty jako WebP (800 i 2200 px), nie PNG. Po każdym nowym zrzucie wygeneruj je z katalogu strony (wymaga `cwebp`, `brew install webp`):
+## Manifesty instalatorów i aktualizacji
 
-```sh
-sh tools/capture/make-webp.sh
-```
+Strona pobiera `public/updates/downloads.json` w przeglądarce. Przyjmowane są tylko adresy z repozytorium `mtjako/zibi-chat-releases`. Menu Linuksa udostępnia AppImage, DEB i RPM dla x86_64 i ARM64; główne CTA dobiera AppImage według architektury zgłaszanej przez przeglądarkę. Brak manifestu lub instalatora wyświetla dotychczasowy komunikat.
 
-Pliki PNG zostają: korzysta z nich obrazek podglądu linku i wersja strony bez JavaScriptu.
+Proces `publish-update` w repozytorium aplikacji powinien aktualizować `public/updates/` i uruchamiać deployment strony. Manifestów nie edytujemy ręcznie. Zrzuty aplikacji można odświeżyć narzędziami w `tools/editor-capture/`, a następnie wygenerować responsywne pliki przez `npm run images`.
 
-Obrazek podglądu linku (`assets/og-image.png`, 1200×630) powstaje z `tools/capture/og.html`. Przy serwerze strony na porcie 8765 (`python3 -m http.server 8765`):
+Dokumentacja: [Next.js static exports](https://nextjs.org/docs/app/guides/static-exports), [Tailwind CSS z Next.js](https://tailwindcss.com/docs/installation/framework-guides/nextjs).
 
-```sh
-playwright-cli open http://127.0.0.1:8765/
-playwright-cli run-code --filename=tools/capture/take-og.js
-```
+## Sekcja edytora
 
-Renderer importuje aktualne komponenty aplikacji. Zmiany ich kontraktów mogą wymagać aktualizacji `fixture.ts`.
+Sekcja `#edytor` znajduje się między bento a Środowiskami. Trzy klikalne kafelki pokazują edytor plików, Git i kolekcje API. Współdzielony obraz ładuje wyłącznie wybrany widok, obsługuje PL/EN, motywy i reduced motion. Strzałki, Home i End przełączają kafelki. Bez JavaScriptu zostają pierwszy zrzut i opisy. Test: `tests/editor.js`. Zrzuty PL/EN w obu motywach pochodzą z rzeczywistych komponentów aplikacji z przykładowymi danymi, bez dostępu do plików użytkownika. Renderer: `tools/editor-capture/` (wymaga sąsiedniego repozytorium `zibi-chat` lub `ZIBI_APP_DIR`). Uruchom Vite z konfiguracją `tools/editor-capture/vite.config.mjs`, wykonaj `take-shots.js` przez Playwright CLI z katalogu projektu, następnie `npm run images`.
+
+Git i API używają danych demonstracyjnych; request nie trafia do zewnętrznej usługi.

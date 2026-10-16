@@ -1,0 +1,7 @@
+# Playwright CLI evaluates this file as a function expression.
+tests/browser.js
+tests/motion.js
+tests/details.js
+tests/downloads.js
+tests/editor.js
+tools/editor-capture/take-shots.js

@@ -1,4 +1,10 @@
-.DS_Store
-_site/
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
 .playwright-cli/
-.vite/
+.DS_Store
+
+.reports/
