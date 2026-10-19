@@ -1,39 +1,39 @@
 {
-  "version": "0.9.9",
-  "pub_date": "2026-10-16T14:11:14.849Z",
-  "release_url": "https://github.com/mtjako/zibi-chat-releases/releases/tag/v0.9.9",
+  "version": "1.0.0",
+  "pub_date": "2026-10-19T15:37:25.985Z",
+  "release_url": "https://github.com/mtjako/zibi-chat-releases/releases/tag/v1.0.0",
   "files": {
     "macos-aarch64": {
-      "name": "zibi-chat_0.9.9_darwin-aarch64.dmg",
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.9/zibi-chat_0.9.9_darwin-aarch64.dmg"
+      "name": "zibi-chat_1.0.0_darwin-aarch64.dmg",
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.0.0/zibi-chat_1.0.0_darwin-aarch64.dmg"
     },
     "windows-x86_64": {
-      "name": "zibi-chat_0.9.9_windows-x86_64-setup.exe",
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.9/zibi-chat_0.9.9_windows-x86_64-setup.exe"
+      "name": "zibi-chat_1.0.0_windows-x86_64-setup.exe",
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.0.0/zibi-chat_1.0.0_windows-x86_64-setup.exe"
     },
     "linux-x86_64-appimage": {
-      "name": "zibi-chat_0.9.9_linux-x86_64.AppImage",
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.9/zibi-chat_0.9.9_linux-x86_64.AppImage"
+      "name": "zibi-chat_1.0.0_linux-x86_64.AppImage",
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.0.0/zibi-chat_1.0.0_linux-x86_64.AppImage"
     },
     "linux-x86_64-deb": {
-      "name": "zibi-chat_0.9.9_linux-x86_64.deb",
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.9/zibi-chat_0.9.9_linux-x86_64.deb"
+      "name": "zibi-chat_1.0.0_linux-x86_64.deb",
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.0.0/zibi-chat_1.0.0_linux-x86_64.deb"
     },
     "linux-x86_64-rpm": {
-      "name": "zibi-chat_0.9.9_linux-x86_64.rpm",
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.9/zibi-chat_0.9.9_linux-x86_64.rpm"
+      "name": "zibi-chat_1.0.0_linux-x86_64.rpm",
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.0.0/zibi-chat_1.0.0_linux-x86_64.rpm"
     },
     "linux-aarch64-appimage": {
-      "name": "zibi-chat_0.9.9_linux-aarch64.AppImage",
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.9/zibi-chat_0.9.9_linux-aarch64.AppImage"
+      "name": "zibi-chat_1.0.0_linux-aarch64.AppImage",
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.0.0/zibi-chat_1.0.0_linux-aarch64.AppImage"
     },
     "linux-aarch64-deb": {
-      "name": "zibi-chat_0.9.9_linux-aarch64.deb",
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.9/zibi-chat_0.9.9_linux-aarch64.deb"
+      "name": "zibi-chat_1.0.0_linux-aarch64.deb",
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.0.0/zibi-chat_1.0.0_linux-aarch64.deb"
     },
     "linux-aarch64-rpm": {
-      "name": "zibi-chat_0.9.9_linux-aarch64.rpm",
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v0.9.9/zibi-chat_0.9.9_linux-aarch64.rpm"
+      "name": "zibi-chat_1.0.0_linux-aarch64.rpm",
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.0.0/zibi-chat_1.0.0_linux-aarch64.rpm"
     }
   }
 }
