@@ -82,9 +82,9 @@ playwright-cli -s=zibi-performance close
 
 ## Cloudflare Pages
 
-Strona jest hostowana na Cloudflare Pages (od 2026-10-21; wcześniej GitHub Pages, wyłączone). Cloudflare buduje ją sam po każdym pushu na `develop`, przez integrację z Gitem:
+Strona jest hostowana na Cloudflare Pages (od 2026-10-21; wcześniej GitHub Pages, wyłączone). Cloudflare buduje ją sam po każdym pushu na `main`, przez integrację z Gitem:
 
-- gałąź produkcyjna: `develop` (domyślna gałąź repozytorium; tam `publish-update` z repozytorium aplikacji wypycha manifesty);
+- gałąź produkcyjna: `main` (domyślna gałąź repozytorium; tam `publish-update` z repozytorium aplikacji wypycha manifesty);
 - polecenie: `npm run build`, katalog wynikowy: `out`, zmienna `NODE_VERSION=24`, bez `NEXT_PUBLIC_BASE_PATH`;
 - domena `zibi.chat` (strefa DNS w Cloudflare); pliki statyczne mają domyślnie `Cache-Control: public, max-age=0, must-revalidate`, więc nowy manifest widać od razu po wdrożeniu.
 
