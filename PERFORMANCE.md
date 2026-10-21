@@ -15,7 +15,7 @@ Next.js 16.4.2, Lighthouse 13.5.0, lokalny statyczny eksport z Brotli/gzip. Pomi
 
 Wyniki wydajności z kolejnych przebiegów: mobile **100 / 99 / 99**, desktop **100 / 100 / 100**. Nie deklarujemy stałego 100 na mobile; mediana wynosi 99.
 
-Pierwszy audyt przed optymalizacją pokazał mobile 80 i desktop 98, ale używał serwera bez kompresji. Porównanie obejmuje więc zarówno zmiany kodu, jak i konfigurację podglądu. Weryfikacja na docelowym GitHub Pages pozostaje do wykonania po wdrożeniu.
+Pierwszy audyt przed optymalizacją pokazał mobile 80 i desktop 98, ale używał serwera bez kompresji. Porównanie obejmuje więc zarówno zmiany kodu, jak i konfigurację podglądu. Weryfikacja na docelowym hostingu (od 2026-10-21 Cloudflare Pages; pomiary wyżej pochodzą z czasów GitHub Pages) pozostaje do wykonania.
 
 ## Wprowadzone zmiany
 

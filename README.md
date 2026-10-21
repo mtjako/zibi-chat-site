@@ -1,6 +1,6 @@
 # Zibi Chat — strona w Next.js + Tailwind CSS
 
-Strona działa w Next.js App Router, React, TypeScript i Tailwind CSS 4. Zachowuje treść, układ, ikony, obrazy, PL/EN, motyw systemowy/jasny/ciemny, FAQ i pobieranie instalatorów. Projekt działa jako statyczny eksport na GitHub Pages i zastępuje poprzednią wersję w repozytorium `mtjako/zibi-chat-site`.
+Strona działa w Next.js App Router, React, TypeScript i Tailwind CSS 4. Zachowuje treść, układ, ikony, obrazy, PL/EN, motyw systemowy/jasny/ciemny, FAQ i pobieranie instalatorów. Projekt działa jako statyczny eksport na Cloudflare Pages i zastępuje poprzednią wersję w repozytorium `mtjako/zibi-chat-site`.
 
 ## Uruchomienie
 
@@ -45,7 +45,7 @@ Sekcje strony są Server Components. Pełny słownik i treść PL/EN są przetwa
 
 Grafiki mają rozmiary 480, 720, 800, 1100, 1600 i 2200 px; logotypy korzystają z małych wariantów. Po zmianie źródłowych PNG uruchom `npm run images` (wymaga `cwebp`, na macOS: `brew install webp`). Wygenerowane pliki są zapisane w repozytorium, więc CI nie wymaga tego narzędzia.
 
-`experimental.inlineCss` osadza CSS w HTML i usuwa blokujące żądanie arkusza. Przy aktualizacji Next.js należy sprawdzić dalszą obsługę tej eksperymentalnej opcji. Podgląd (`npm run preview`) używa Brotli/gzip i cache; po wdrożeniu za te ustawienia odpowiada GitHub Pages.
+`experimental.inlineCss` osadza CSS w HTML i usuwa blokujące żądanie arkusza. Przy aktualizacji Next.js należy sprawdzić dalszą obsługę tej eksperymentalnej opcji. Podgląd (`npm run preview`) używa Brotli/gzip i cache; po wdrożeniu za te ustawienia odpowiada Cloudflare Pages.
 
 ```sh
 npm run build
@@ -80,18 +80,21 @@ playwright-cli -s=zibi-performance run-code --filename=tests/details.js
 playwright-cli -s=zibi-performance close
 ```
 
-## GitHub Pages
+## Cloudflare Pages
 
-1. W ustawieniach istniejącego repozytorium `mtjako/zibi-chat-site` wybierz Settings → Pages → Source → GitHub Actions.
-2. Push na `main` lub `develop` uruchamia `.github/workflows/pages.yml`.
+Strona jest hostowana na Cloudflare Pages (od 2026-10-21; wcześniej GitHub Pages, wyłączone). Cloudflare buduje ją sam po każdym pushu na `develop`, przez integrację z Gitem:
 
-Workflow buduje `out/` i publikuje go na Pages. `NEXT_PUBLIC_BASE_PATH` przyjmuje prefiks z konfiguracji GitHub Pages, więc obsługuje też adres `uzytkownik.github.io/repozytorium/`. Dla lokalnego sprawdzenia takiego wariantu:
+- gałąź produkcyjna: `develop` (domyślna gałąź repozytorium; tam `publish-update` z repozytorium aplikacji wypycha manifesty);
+- polecenie: `npm run build`, katalog wynikowy: `out`, zmienna `NODE_VERSION=24`, bez `NEXT_PUBLIC_BASE_PATH`;
+- domena `zibi.chat` (strefa DNS w Cloudflare); pliki statyczne mają domyślnie `Cache-Control: public, max-age=0, must-revalidate`, więc nowy manifest widać od razu po wdrożeniu.
+
+`NEXT_PUBLIC_BASE_PATH` zostaje na wypadek eksportu do podkatalogu (np. podglądu pod innym adresem):
 
 ```sh
 NEXT_PUBLIC_BASE_PATH=/repozytorium npm run build
 ```
 
-Serwuj wtedy `out/` pod `/repozytorium/`. Dla własnej domeny pozostaw pusty prefiks. `public/CNAME` zachowuje `zibi.chat`; zmień go, jeśli strona ma używać innej domeny. Metadane OG zachowują oryginalny adres produkcyjny. Zachowana jest blokada indeksowania przed premierą (`noindex` i `robots.txt`).
+Serwuj wtedy `out/` pod `/repozytorium/`. Dla własnej domeny pozostaw pusty prefiks. Metadane OG zachowują oryginalny adres produkcyjny. Zachowana jest blokada indeksowania przed premierą (`noindex` i `robots.txt`).
 
 ## Informacje przy pobieraniu
 
