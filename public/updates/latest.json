@@ -1,42 +1,42 @@
 {
-  "version": "1.2.1",
-  "pub_date": "2026-11-17T13:28:03.598Z",
+  "version": "1.3.0",
+  "pub_date": "2026-11-26T13:37:34.607Z",
   "platforms": {
     "darwin-aarch64-app": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi-chat_1.2.1_darwin-aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMklMSkdHN3MrTmljbXlleXRuSWhjOGVrMEh0TzVUQWV2Y0ZJN0c2YzdaM3BuV21mbElneFlVVnFOenVlVGdZdzdoMi9tZEphemEyRTJsbkh6TlZJcUFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTE5ODUwCWZpbGU6WmliaSBDaGF0LmFwcC50YXIuZ3oJdmVyc2lvbjoxLjIuMQo2TExTYkM5dndSYUhQbjdDYm45VmhaTE1ld0xKYnY4S0pwN0E3SVkzeWRXNisrd2k0WkJJTllzd1dFZm1zcXAxWFNmSDFaYTVucEs4UWRDQ0RnajFCdz09Cg=="
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi-chat_1.3.0_darwin-aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMktVOVQ0OVh6SDBQc1NMRk9ueERBSEg1VW9PR3ZpY1I5N1FFdWdhdUkwSXR0OWM3N3NENnJaRmQzZGdVTnE0aFlvT2JBRkUreXhSVXUyczhVbjZoOVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njk3NDk5CWZpbGU6WmliaSBDaGF0LmFwcC50YXIuZ3oJdmVyc2lvbjoxLjMuMAphV2lzN0ZMdUMvRkJWVWRuMTNGOE9mWDNyMlRhT3FQRUxQbUFaOEhYS3R5a1YvY1NxMUxlWUx0UDRzQ1ZCNWNkaGlPdC9BSFp5R29JcDY3Z0FYejhCdz09Cg=="
     },
     "darwin-aarch64": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi-chat_1.2.1_darwin-aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMklMSkdHN3MrTmljbXlleXRuSWhjOGVrMEh0TzVUQWV2Y0ZJN0c2YzdaM3BuV21mbElneFlVVnFOenVlVGdZdzdoMi9tZEphemEyRTJsbkh6TlZJcUFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTE5ODUwCWZpbGU6WmliaSBDaGF0LmFwcC50YXIuZ3oJdmVyc2lvbjoxLjIuMQo2TExTYkM5dndSYUhQbjdDYm45VmhaTE1ld0xKYnY4S0pwN0E3SVkzeWRXNisrd2k0WkJJTllzd1dFZm1zcXAxWFNmSDFaYTVucEs4UWRDQ0RnajFCdz09Cg=="
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi-chat_1.3.0_darwin-aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMktVOVQ0OVh6SDBQc1NMRk9ueERBSEg1VW9PR3ZpY1I5N1FFdWdhdUkwSXR0OWM3N3NENnJaRmQzZGdVTnE0aFlvT2JBRkUreXhSVXUyczhVbjZoOVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njk3NDk5CWZpbGU6WmliaSBDaGF0LmFwcC50YXIuZ3oJdmVyc2lvbjoxLjMuMAphV2lzN0ZMdUMvRkJWVWRuMTNGOE9mWDNyMlRhT3FQRUxQbUFaOEhYS3R5a1YvY1NxMUxlWUx0UDRzQ1ZCNWNkaGlPdC9BSFp5R29JcDY3Z0FYejhCdz09Cg=="
     },
     "windows-x86_64-nsis": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi-chat_1.2.1_windows-x86_64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMklGUklmY0t5VGVwSCtaMVlBR2l0anZkSmJBaWxGZ0UzWUZLZVc4bENWaVMzVzVNWlR1L3Rzem5WK25lbW1Zd1doZ25JSXFtZTJQdis2ckxYMUtjSVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTIwMDUzCWZpbGU6WmliaSBDaGF0XzEuMi4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjIuMQo4MmNRREZ6SjVnTWNILzcxaml2cDV1RlVtbXBONlY4eXBYb09Mb2VYZjhZbytxakRzUjh6eGhNYXBCRmZ5bllodWExRHR6bVd4NWxkVGJ4VmQxd0ZCQT09Cg=="
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi-chat_1.3.0_windows-x86_64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkZuVTI4QmtkUXJOam1ORkkzMXQ2VzU0aDNkazZHT2RwVEtSazV5aGo4Yi9NekVpMTlaNWNRTTVMazJSOFhWUVptZmtOWFY2VncxY0RHYjJ4dC9CV1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njk3NzY3CWZpbGU6WmliaSBDaGF0XzEuMy4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjMuMAplc2pOSDhuKzg2Y3Q0cENBd2VjRC9hcVN0SkhnbFoyY00ybVh3QWdSYTlXdHY1Q1BDRXp2SzhtdFAzVXlGcC8xb1ZPTmdmc3ZrbjJ3bmZUYVJVZ3lCQT09Cg=="
     },
     "linux-x86_64-deb": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi-chat_1.2.1_linux-x86_64.deb",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMk1nSGtmdHBFMmZCNDcydVB0RDhUdXBWOW1FYThoek8xa25oNERFQ29ZVithZStYTXNkZUFHMTlzQllTQlgzb3lpMnpRM0k2WVJtM2lkN1U3aG1mb1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTIyMDgxCWZpbGU6emliaS1jaGF0XzEuMi4xX2xpbnV4LXg4Nl82NC5kZWIJdmVyc2lvbjoxLjIuMQoxSmhDMGxCT0pqM1NYWFZndFhUZG9PNExqMGkwZ2kvRUdnZVhGTElKZUsyWk5sNHJMMytsNEZuZFAxTk9Xc3A1TnBISWNWbU5BQUhtQWx3ZVJoaWtBUT09Cg=="
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi-chat_1.3.0_linux-x86_64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkJLUVJVMEl3YUFLRGtuRnd3VmYrNUhYKzdDeWpkalBUR0RSbEJKZHBPSXJlNEcrTzJYb29OSWkrNHg4SmoxV3dweXo4MEUyOFR6UDJYNEhvRUtub3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzAwMjUyCWZpbGU6emliaS1jaGF0XzEuMy4wX2xpbnV4LXg4Nl82NC5kZWIJdmVyc2lvbjoxLjMuMAorTjk3UUs2UDF4eHhnYUMxOGdFV1BTRXhaUTFoTVVqTitnTXlzUm5IS1AwR1pQck1aSFdxR3JZZlNoN2N5MDFYL3JxaVlpY1k4OGQ2YmFvWjlSdzlEQT09Cg=="
     },
     "linux-x86_64-rpm": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi-chat_1.2.1_linux-x86_64.rpm",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkd5eTJORDJFOGhZczZOZWIvQUhoTmxLeG1palRJYU9BNjBscDN4SEhsNDdSekZFTDBqcXEwOU9ES3VoTi9GUlhyQllaN1JRZjllV0w5U25KejRRQXdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTIyMDgxCWZpbGU6emliaS1jaGF0XzEuMi4xX2xpbnV4LXg4Nl82NC5ycG0JdmVyc2lvbjoxLjIuMQpzbHNOcWtYTTFPblJpNlVyVWhWRDA1TFRCc1FJaFBpUnBZVi90MTdoQWdBWnlPZVAvRFIvUk5PN2hQS0VKdkF4S2pCamg4WEpqRE55UDV4QWFndnRDUT09Cg=="
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi-chat_1.3.0_linux-x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkViNUJTTitJd3RvNi9rdjROakNCTUFwVStIeG9MbkI4NCt3L0NyTVFneVRiaWJwS0k4VW5vN1QrdksrNGJuVkdhNDI2Z1k4LzZacFdZWUtobHI1M0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzAwMjUyCWZpbGU6emliaS1jaGF0XzEuMy4wX2xpbnV4LXg4Nl82NC5ycG0JdmVyc2lvbjoxLjMuMAo0MCtEcnpnd3VRYjY0b0FLdVdza2NwaGdJR3ArN1lOVTMzSDVRNnV1MlhmL3phL1VocytVMDhPeW5FUEFVTnA3NUxwYkVZUlJYT0tHSVVPREV0RmZBQT09Cg=="
     },
     "linux-x86_64-appimage": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi-chat_1.2.1_linux-x86_64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMlBpb3pKcnhEU1BDVWNwbmM3a0d1ZnA2US9jTmVPbEYrVmcwY2FNM3MvVWVvUUlRbm13d3RMUW1udk1tbkh0SjhBZEhUWlBSdHcrNFdTUmp2Tnh1SndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTIyMDgxCWZpbGU6emliaS1jaGF0XzEuMi4xX2xpbnV4LXg4Nl82NC5BcHBJbWFnZQl2ZXJzaW9uOjEuMi4xCkVKbnk5amVueUg3ZE5QSTJLVWtsTnRhSmlNUVc5SkVCV29KWElJQnVhOURqYUR4Y0ExKzJNc3E0ZzYxNm1BYXVXZERRVXYyMGtGU09oR3N1QXljRENBPT0K"
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi-chat_1.3.0_linux-x86_64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkx5Vm1CN0xwUmMxeS9Jb05sazVuUUtOOHpTc1lSK3liQnBGYy92RStmaGJveEtnaDJ3aVFia2VVY0tEc2YwTUFTRmp5NkpuWERhSWpVNWloczN2OGdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzAwMjUyCWZpbGU6emliaS1jaGF0XzEuMy4wX2xpbnV4LXg4Nl82NC5BcHBJbWFnZQl2ZXJzaW9uOjEuMy4wCndDdWtkMEl1V1ZFNVArZGhTckFuajVXb0s3RWkrYkVBc1YwbW85OHM3NE03Ym5paC9Uc2E0WndFcE5aclRwaGtTQWVrNXdMeTJnWlRzNHBRdVlzYUFnPT0K"
     },
     "linux-aarch64-deb": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi-chat_1.2.1_linux-aarch64.deb",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMks0alpCckFQWkRldENrOU03UFZnMDhqNXEzWmdnMUlkY0lNYXUySmpJeUNLVE1ONW0vdXM5N2lQRWdwUDRuMmpBWXpqM0FhcnZEeGgwUStNQmRPNEFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTIyMDgyCWZpbGU6emliaS1jaGF0XzEuMi4xX2xpbnV4LWFhcmNoNjQuZGViCXZlcnNpb246MS4yLjEKS21HbkhZNXJ3MFEvN0N2blM5cUtDWEV1YlluUU1COHl0QXdpL0JBNjIrTjNXdHkySGdYcmpEVmhTeEI5NjVQSk1VSDhSeFlGSzcwZzlnKytGek9WQWc9PQo="
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi-chat_1.3.0_linux-aarch64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkU1MWtVL2pxOW9vaE1KdWdlV3hhVUpOUG1RWFBCOUdSZFo0ZzFRdWlBaDQrWGFrdXBHQTMvQ2haZ2ZTTEFlOGVYZUFLWmZiRDJ2ZlJFdTUrSUh6eHdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzAwMjUzCWZpbGU6emliaS1jaGF0XzEuMy4wX2xpbnV4LWFhcmNoNjQuZGViCXZlcnNpb246MS4zLjAKd1JqWVdXQ3RmblFyQTVXSnc3cHIrS2JsRmhZaVVYRDNncVZPWGJORFFLSlQ1WDNPK3k2bE90SlNUSTM0NVpoN1RLZDNGY2paYkw4ZEdHeCs5T3ZnQVE9PQo="
     },
     "linux-aarch64-rpm": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi-chat_1.2.1_linux-aarch64.rpm",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkZPcDNkSnJuVFBXUEx3Z2tDdUZCTkduak92dHlnTXBza1Q2RDNEQmVEbklScUlxQ0tWYmt3RmxkSkhUWDMxam01YUtHajdOWlBsMXdYaWxsbkh5L0FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTIyMDgyCWZpbGU6emliaS1jaGF0XzEuMi4xX2xpbnV4LWFhcmNoNjQucnBtCXZlcnNpb246MS4yLjEKNmVxcUxxd0pZbkJhMEgyaXduNkVqVmt0Z2xNNTJpUzRTN2owR0I0UG9LTXZFbHk3SDNHcGhkR0FJZ0xxS1VQZTVTcVh2eUhyR2Y0blRINzQ2QzFaQUE9PQo="
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi-chat_1.3.0_linux-aarch64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMklid0tMeFZURnVFQ2tzME9GS0xVN3RBVVJ4NzVhdzIreE5oWXQrT0dGYjV3TENpK1c3dlQzOGJ3U09aalo3WktDbEo2VzNPM3NsbGIvOFlvVnV2NHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzAwMjUzCWZpbGU6emliaS1jaGF0XzEuMy4wX2xpbnV4LWFhcmNoNjQucnBtCXZlcnNpb246MS4zLjAKMm9KWmNvbHk5NkRXVUwrc1JRZDU0MG1PckppL2ZHQW9kcDZSU0kzd2plN2dlRUxpUmhacU1aNkxUdHZydXZWL2lPQXMzV05FOXNOQXZRRXFnQ25rRFE9PQo="
     },
     "linux-aarch64-appimage": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi-chat_1.2.1_linux-aarch64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkx6OEVsUWlqVVZ6b3RILzBlTG9SVWR3dElQMytLN3pTRnhjckw1ejZBUk5EVEQvQWJKdmNnd3dSS01yZFRHSGNVTEpnUzM1WTQwMW1PWWhKcERmSUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTIyMDgyCWZpbGU6emliaS1jaGF0XzEuMi4xX2xpbnV4LWFhcmNoNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjIuMQppYTlqMjgvT1RNamNDeFBndE5maGk5aWR5eXQwUUNKOER6RmdYNWlKQjEweDVtS3h3M0pUeStJaFhwMzhYNWtubzN6MWE3TkpEM2ovTjdsRGpPQzZEdz09Cg=="
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi-chat_1.3.0_linux-aarch64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMk1yU3QxVnRQNkVOWm12Z3dCV2FnMWsxMUlDZjF3Rk93bDhFUStXTlc5d0g5Rnk3VkplR2xnU0h6YTlEMEp4VWhVZkRPU1hsOTBxL0xFZU85UThyTndFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzAwMjUzCWZpbGU6emliaS1jaGF0XzEuMy4wX2xpbnV4LWFhcmNoNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjMuMApDSC9pRXNtRE95TWFvOFlXaWVQZDFnQTEveWFkL0dNOXNaSGp1YXVPelltR0srZ3JCMkptalNJdVhXUDRnOTAwTDVpaVhIeGx4N05FYWNaWEJqVHNDQT09Cg=="
     }
   }
 }

@@ -1,14 +1,14 @@
 {
-  "version": "1.2.1",
-  "pub_date": "2026-11-17T13:28:03.598Z",
+  "version": "1.3.0",
+  "pub_date": "2026-11-26T13:37:34.607Z",
   "platforms": {
     "linux-x86_64": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi_1.2.1_linux-x86_64.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMkdWV2twVXpIcjVTTStOSitEc1kxaFRuNjN1bUVDZ1lrdGJWWkd6T2dwbzFndGc3cm1SQ3JYdDQzWjZNSTNHV09SRlRzTWdkWmt6R2pFN2pyMDA2eFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTIyMDgzCWZpbGU6emliaV8xLjIuMV9saW51eC14ODZfNjQudGFyLmd6CXZlcnNpb246MS4yLjEKNnpMbHMyOTV5bGFuUDdacWhtbHR4Y3FrSlNQU1hod2lVeEZ5Z1lsMk0zdnZ3ZmhvZGVuRVRSbkdHY211bXByUHNMQ2lMbW1kUGZ4Y2Yrb0tFTmtyQXc9PQo="
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi_1.3.0_linux-x86_64.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMk9UL01JZmVRVjVUWFY1TURIOGFxb0lFdlkxRTNFaGhEd0xoTjRydHlaWmlIOWxoV2s1RE0vQ2VKUHFDbHBYLzMxQzdCdWdzd2JtTGRqQ2lzc3dIOVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzAwMjU0CWZpbGU6emliaV8xLjMuMF9saW51eC14ODZfNjQudGFyLmd6CXZlcnNpb246MS4zLjAKQWsrdDRXT3hIN1BlTnRub0tBU2c0VGUvRGZXbmQ5czNLdDFEY0RmYWU0MC9zNVAvSHlXUnQwN2crTjFJM3BBQmNlR0RWMjE2VGE0R0RJZStJWUtlQnc9PQo="
     },
     "linux-aarch64": {
-      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.2.1/zibi_1.2.1_linux-aarch64.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMklNZ1JjTzNjbE43SldDRWtuL3hpRkVCc0dMQlNIcGFsQ09rWmdybmpzWEJ5TWdVZzlwWllPQUJleGFSb2R4b3ZQVE5yUGZOZ3h2Z0RJQk5TYTFUZlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTIyMDgzCWZpbGU6emliaV8xLjIuMV9saW51eC1hYXJjaDY0LnRhci5negl2ZXJzaW9uOjEuMi4xCitNL1dkazNwTmZIa2M3bXRnRmRmUTFrMFpLVnNJaWVuTG5xSmI5Q0NGcGNvSmdVdzdWUHBSd3VaYi9tT2RZclk1TXY2L1VZaE9obEFuN0lxakJtNENnPT0K"
+      "url": "https://github.com/mtjako/zibi-chat-releases/releases/download/v1.3.0/zibi_1.3.0_linux-aarch64.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSekFYVUVhOUhKMk9FdmtrZEQ5KzBwNjUwQVo3eTJ3bERxRWVUNzJFUzRSc3NMaW45UmtMTVVYTmtiQXRGQWpmUG0vOFdUWWFVdGRJZkhYdDcrRDhHTUg4WXhDdTF0K2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzAwMjU0CWZpbGU6emliaV8xLjMuMF9saW51eC1hYXJjaDY0LnRhci5negl2ZXJzaW9uOjEuMy4wClk3QitKcHNuOWxVSFZKWVQ0cSt5aFlqKzFmVzFkQ2xQZHFwMkxvaXNBYkJLQWtzb0Q2Zzd6RWlNN014UmZlS0pYenk4WGV5WXhPZEZIL2NNQjR6YkJ3PT0K"
     }
   }
 }
